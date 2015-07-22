@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,11 +30,11 @@
 <!-- NAVBAR
 ================================================== -->
   <body style="background-image:url('Background_nb.jpg');  background-repeat: no-repeat;">
-      <div class="container">
+      <div class="container-fluid">
         <div class="masthead">
         <h3 class="text-muted">OnDemand</h3>
 	<p class="text-muted">Des produits simples pour une mise en oeuvre immédiate</p>
-        <ul class="nav nav-justified">
+        <ul class="nav nav-justified hidden-xs hidden-sm">
           <li><a href="index.html">Accueil</a></li>
           <li class="active"><a href="#">Produits</a></li>
           <li><a href="services.html">Services</a></li>
@@ -56,7 +56,9 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="img-responsive center-block" src="dist/Plug.png" alt="First slide">
+          <div style="position:relative; width: 100%; height: 0; padding-bottom: 10% ;
+                      background-repeat: no-repeat; background-position: center center;
+                      background-size: cover; width: auto; height: 100%; background-image:url('dist/Plug.png');"></div>
           <div class="container">
             <div class="carousel-caption">
               <h1>Les Prises intelligentes.</h1>
@@ -66,7 +68,9 @@
           </div>
         </div>
         <div class="item">
-          <img src="dist/box.png" alt="Second slide">
+          <div style="position:relative; width: 100%; height: 0; padding-bottom: 10% ;
+                      background-repeat: no-repeat; background-position: center center;
+                      background-size: cover; width: auto; height: 100%; background-image:url('dist/box.png');"></div>
           <div class="container">
             <div class="carousel-caption">
               <h1>Le Module Multimedia</h1>
@@ -76,7 +80,9 @@
           </div>
         </div>
         <div class="item">
-          <img src="dist/Capteur.png" alt="Third slide">
+          <div style="position:relative; width: 100%; height: 0; padding-bottom: 10% ;
+                      background-repeat: no-repeat; background-position: center center;
+                      background-size: cover; width: auto; height: 100%; background-image:url('dist/Capteur.png');"></div>
           <div class="container">
             <div class="carousel-caption">
               <h1>Capteurs</h1>
@@ -105,7 +111,7 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-md-6 col-xs-12 col-lg-4">
             <div style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px; padding: 5px;">
                 <img class="img-circle" src="dist/Plug_square.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
                 <h2>Les Prises communiquantes</h2>
@@ -119,7 +125,7 @@
             </div>
         </div><!-- /.col-lg-4 -->
         <!--<div class="col-lg-2"></div>-->
-        <div class="col-lg-4">
+        <div class="col-md-6 col-xs-12 col-lg-4">
             <div style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px; padding: 5px;">
           <img class="img-circle" src="dist/box_square.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Le Module Multimedia</h2>
@@ -127,16 +133,17 @@
           <p>Diffusez du son ou de l'image n'importe ou depuis une seule interface</p>
           <p>Accédez à toute votre collection musicale depuis n'importe ou</p>
             <p>Jouez du contenu web sur votre écran préferé</p>
-          <p><a class="btn btn-default" href="#" role="button">Détails &raquo;</a></p>
+          <p><a class="btn btn-default" href="#Multimedia" role="button">Détails &raquo;</a></p>
             </div>
         </div><!-- /.col-lg-4 -->
           <!--<div class="col-lg-1"></div>-->
-        <div class="col-lg-4"><div style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px; padding: 5px;">
+        <div class="col-md-6 col-xs-12 col-lg-4">
+            <div style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px; padding: 5px;">
           <img class="img-circle" src="dist/Capteur_square.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Les Capteurs</h2>
           <p>Véritables acteurs de l'automatisme, ils permettent de déclencher tout type d'action à la demande</p>
           <p>Multitude de modèles: présence, température, luminosité, humidité, Vent...</p>
-          <p><a class="btn btn-default" href="#" role="button">Détails &raquo;</a></p>
+          <p><a class="btn btn-default" href="#Sensors" role="button">Détails &raquo;</a></p>
             </div>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
@@ -147,13 +154,13 @@
       <hr id="plug" class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7" style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px;">
+        <div class="col-md-7 col-xs-12" style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px;">
           <h2 class="featurette-heading">Des modules à la carte. <span class="text-muted">S'adaptent à votre maison sans rien avoir à modifier.</span></h2>
           <p class="lead">Il suffit de brancher une prise ou vous voulez, et c'est prêt, le paramétrage a déja été fait lors de votre commande.</p>
         <p>De nombreux modules existent, du modèle de base onDemand parfait pour une nouvelle installation aux différents modèles multi-protocoles qui permettent de se connecter sur une installation déja existante, que ce soit les protocoles traditionnels (Somfy, HomeEasy, Z-wave, X10, RFLink, KNIX) ou des systèmes reliés à une plateforme Cloud (Nest, Hue ...), avec onDemand, vous controllez tout en même temps depuis la même inteface, avec le minimum d'effort.</p>
         <p>La prise elle-même est une prise commandée totalement gérée par le système, cela vous permet d'automatiser tout ce que vous voulez, de plus la prise analyse la consommation électrique et fait des remontées statistiques, vous permettant de gérer vos appareils en harmonie avec l'environement et de faire des économies</p>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 col-xs-12">
           <img class="featurette-image img-responsive" src="dist/onDemand_plug_arrows.png" alt="onDemand Plug schema"  style="border-radius: 12px;">
         </div>
       </div>
@@ -161,7 +168,7 @@
       <hr id="Multimedia" class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-5">
+        <div class="col-md-5 col-xs-12">
           <img class="featurette-image img-responsive" src="dist/box_square.png" alt="Generic placeholder image" style="border-radius: 12px;">
         </div>
         <div class="col-md-7" style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px;">
@@ -174,12 +181,12 @@
       <hr id="Sensors" class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7"  style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px;">
+        <div class="col-md-7 col-xs-12"  style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px;">
           <h2 class="featurette-heading">Gardez le contact. <span class="text-muted">Automatisez votre confort</span></h2>
           <p class="lead">Avec nos capteurs, restez informés et imaginez votre bien être</p>
             <p>Pourquoi éteindre la lumière quand on quitte la maison, pourquoi chercher un interrupteur dans le noir, les enfants sont-ils rentrés de l'école, est-il nécessaire de mettre le chauffage ? Toutes ces questions feront désormais partie du passé pour vous</p>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 col-xs-12">
           <img class="featurette-image img-responsive" src="dist/Capteur_square.png" alt="Generic placeholder image" style="border-radius: 12px;">
         </div>
       </div>
@@ -195,6 +202,7 @@
         <p>&copy; 2014 onDemand systems &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
+    </div><!-- /.container -->
     </div><!-- /.container -->
 
 
