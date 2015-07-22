@@ -29,7 +29,7 @@
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body style="background-image:url('Background_nb.jpg');">
+  <body style="background-image:url('Background_nb.jpg');  background-repeat: no-repeat;">
       <div class="container">
         <div class="masthead">
         <h3 class="text-muted">OnDemand</h3>
@@ -56,12 +56,12 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="dist/Plug.png" alt="First slide">
+          <img class="img-responsive center-block" src="dist/Plug.png" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Les Prises intelligentes.</h1>
               <p>Périphérique de base de votre installation onDemand, permet de commander la prise, mais aussi d'autres périphériques, en fonction du protocole choisi</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Détails</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#plug" role="button">Détails</a></p>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@
             <div class="carousel-caption">
               <h1>Le Module Multimedia</h1>
               <p>Se connecte à votre TV ou votre installation Hi-Fi</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Détails</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#Multimedia" role="button">Détails</a></p>
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@
             <div class="carousel-caption">
               <h1>Capteurs</h1>
               <p>Surveillez les mouvements, l'humidité ou la température et élaborez des scénarios à la carte</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Détails</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#Sensors" role="button">Détails</a></p>
             </div>
           </div>
         </div>
@@ -105,74 +105,82 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-3" style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px;">
-          <img class="img-circle" src="dist/Plug.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Les Prises communiquantes</h2>
-          <p>Véritable passerelle du système, permet d'interconnecter d'autres protocoles en plus de gérer la prise</p>
-            <p>Modèles CPL, Wifi ou Ethernet</p>
-            <p>De nombreux modèles et options disponibles : Nest&#174, Chacon&#174, Z-Wave&#174, Bluetooth, KNIX&#174...</p>
-            <p>Controllez vos volets roulants, vos lumières, votre chauffage ou climatisation, vos équipements multimedia depuis une seule application</p>
-              <p>Remontée des statitisques d'utilisation et de consommation de la prise</p>
-              <p>Permet de varier l'intensité si l'objet branché est compatible</p>
-          <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
+        <div class="col-lg-4">
+            <div style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px; padding: 5px;">
+                <img class="img-circle" src="dist/Plug_square.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                <h2>Les Prises communiquantes</h2>
+                <p>Véritable passerelle du système, permet d'interconnecter d'autres protocoles en plus de gérer la prise</p>
+                <p>Modèles CPL, Wifi ou Ethernet</p>
+                <p>De nombreux modèles et options disponibles : Nest&#174, Chacon&#174, Z-Wave&#174, Bluetooth, KNIX&#174...</p>
+                <p>Controllez vos volets roulants, vos lumières, votre chauffage ou climatisation, vos équipements multimedia depuis une seule application</p>
+                <p>Remontée des statitisques d'utilisation et de consommation de la prise</p>
+                <p>Permet de varier l'intensité si l'objet branché est compatible</p>
+                <p><a class="btn btn-default" href="#plug" role="button">Details &raquo;</a></p>
+            </div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-2"></div>
-        <div class="col-lg-3" style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px;">
-          <img class="img-circle" src="dist/box.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+        <!--<div class="col-lg-2"></div>-->
+        <div class="col-lg-4">
+            <div style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px; padding: 5px;">
+          <img class="img-circle" src="dist/box_square.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Le Module Multimedia</h2>
           <p>Transformez votre TV ou votre installation Hi-Fi et entrez dans le monde du Multi-Room</p>
           <p>Diffusez du son ou de l'image n'importe ou depuis une seule interface</p>
           <p>Accédez à toute votre collection musicale depuis n'importe ou</p>
             <p>Jouez du contenu web sur votre écran préferé</p>
           <p><a class="btn btn-default" href="#" role="button">Détails &raquo;</a></p>
+            </div>
         </div><!-- /.col-lg-4 -->
-          <div class="col-lg-1"></div>
-        <div class="col-lg-3" style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px;">>
-          <img class="img-circle" src="dist/Capteur.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <!--<div class="col-lg-1"></div>-->
+        <div class="col-lg-4"><div style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px; padding: 5px;">
+          <img class="img-circle" src="dist/Capteur_square.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Les Capteurs</h2>
           <p>Véritables acteurs de l'automatisme, ils permettent de déclencher tout type d'action à la demande</p>
           <p>Multitude de modèles: présence, température, luminosité, humidité, Vent...</p>
           <p><a class="btn btn-default" href="#" role="button">Détails &raquo;</a></p>
+            </div>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
+      <hr id="plug" class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7" style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px;">
-          <h2 class="featurette-heading">Solution globale et universelle. <span class="text-muted">Une seule interface pour tout contrôller.</span></h2>
-          <p class="lead">Pourquoi avoir différent systèmes de contrôles pour gérer votre alarme, votre musique, vos jeux de lumières, vos volets ou votre arrosage automatique, ou tout ce que vous pouvez imaginer ? le systeme onDemand vous permet de tout centraliser !</p>
-        <p>Une Interface unifiée, que ce soit depuis un navigateur web, votre téléphone (Android ou IOS), ou le logiciel onDemand installé sur votre ordinateur (compatible Mac, PC, Linux)</p>
+          <h2 class="featurette-heading">Des modules à la carte. <span class="text-muted">S'adaptent à votre maison sans rien avoir à modifier.</span></h2>
+          <p class="lead">Il suffit de brancher une prise ou vous voulez, et c'est prêt, le paramétrage a déja été fait lors de votre commande.</p>
+        <p>De nombreux modules existent, du modèle de base onDemand parfait pour une nouvelle installation aux différents modèles multi-protocoles qui permettent de se connecter sur une installation déja existante, que ce soit les protocoles traditionnels (Somfy, HomeEasy, Z-wave, X10, RFLink, KNIX) ou des systèmes reliés à une plateforme Cloud (Nest, Hue ...), avec onDemand, vous controllez tout en même temps depuis la même inteface, avec le minimum d'effort.</p>
+        <p>La prise elle-même est une prise commandée totalement gérée par le système, cela vous permet d'automatiser tout ce que vous voulez, de plus la prise analyse la consommation électrique et fait des remontées statistiques, vous permettant de gérer vos appareils en harmonie avec l'environement et de faire des économies</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="dist/desktop_app_screenshot.png" alt="Desktop_app">
+          <img class="featurette-image img-responsive" src="dist/onDemand_plug_arrows.png" alt="onDemand Plug schema"  style="border-radius: 12px;">
         </div>
       </div>
 
-      <hr class="featurette-divider">
+      <hr id="Multimedia" class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="dist/internet.png" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" src="dist/box_square.png" alt="Generic placeholder image" style="border-radius: 12px;">
         </div>
         <div class="col-md-7" style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px;">
-          <h2 class="featurette-heading">Accédez depuis n'importe où!</h2>
-          <p class="lead">Accédez à votre système depuis l'extérieur et gérez l'accès à vos services, à travers l'interface web ou via les applis Android ou IOS, l'accès via le cloud est disponible mais tout peut être également géré en local sans la nécessité d'être relié à Internet</p>
+          <h2 class="featurette-heading">Transcendez vos médias. <span class="text-muted">Vos photos, votre musique et vos vidéos vous suivent partout</span></h2>
+          <p class="lead">Découvrez le multi-room et le multi-home, vos médias sont localisés à un seul endroit et accessibles de partout ou vous le souhaitez</p>
+            <p>Créez votre univers multimedia et gérez vos ambiances à la carte, le système onDemand vous permet de jouer les contenus que vous souhaitez la ou vous le souhaitez, ne vous encombrez plus de supports obsolètes et gérez en un seul point tous vos contenus multimedia, que ce soit une TV dans votre maison de campagne, un poste audio dans votre cuisine, ou votre téléphone dans les transports en commun, accédez à tout instant à l'ensemble de votre collection multimedia, synchronisez le son et l'image entre plusieurs lecteurs, la seule limitation est votre imagination...</p>
         </div>
       </div>
 
-      <hr class="featurette-divider">
+      <hr id="Sensors" class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7"  style="background-color: rgba(238, 238, 238, 0.6); border-radius: 12px;">
-          <h2 class="featurette-heading">Créez vos propres scénarios. <span class="text-muted">Prenez le contrôle.</span></h2>
-          <p class="lead">Orchestrez votre maison, Imaginez vos propres usages, Automatisez votre confort</p>
+          <h2 class="featurette-heading">Gardez le contact. <span class="text-muted">Automatisez votre confort</span></h2>
+          <p class="lead">Avec nos capteurs, restez informés et imaginez votre bien être</p>
+            <p>Pourquoi éteindre la lumière quand on quitte la maison, pourquoi chercher un interrupteur dans le noir, les enfants sont-ils rentrés de l'école, est-il nécessaire de mettre le chauffage ? Toutes ces questions feront désormais partie du passé pour vous</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="dist/screenshot2.png" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" src="dist/Capteur_square.png" alt="Generic placeholder image" style="border-radius: 12px;">
         </div>
       </div>
 
